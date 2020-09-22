@@ -1,0 +1,28 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    overflow: hidden
+}
+#page{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vh;
+
+}
+.cursor{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 20;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    box-shadow: 1px 1px 0px 1px rgb(236, 116, 4),
+    -1px -1px 0px 1px  rgb(236, 116, 4);
+    border-radius: 50%;
+}
