@@ -1,0 +1,38 @@
+header{
+    width: 100vw;
+    height: 10%;
+    background-color :transparent;
+    position: relative;
+    animation: both 2s initHeader ease-out;
+    box-shadow: none;
+}
+header > nav {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    padding-left : 10%;
+    font-size : 3em;
+    color: white;
+    font-variant: small-caps;
+    position: absolute;
+    bottom: 0;
+}
+header > nav >span {
+    display: block;
+}
+@keyframes initHeader{
+    0%{
+        position: relative;
+        left: -120vw;
+        box-shadow: none;
+    }
+    75%{
+        position: relative;
+        left: 0 ;
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 0px 4px  2px   rgba(235, 143, 4, 0.438),
+        inset 0px -2px  2px rgba(235, 143, 4, 0.356);
+    }
+}
