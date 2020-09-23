@@ -29,7 +29,7 @@ function delPage(){
 function initHeader(){
     pageElt.innerHTML = `
     <header>
-        <nav>
+        <nav id ="ecoute">
             <span class= 'detectable' id='accueil'>Accueil</span>
             <span class= 'detectable' id='contact'>Contact</span>
             <span class= 'detectable' id='init'>Init</span>
