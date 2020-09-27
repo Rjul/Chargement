@@ -5,6 +5,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    transition: all 2s;
 }
 #clock{
     width: 100%;
@@ -33,6 +34,7 @@ img{
     left:50%;
     transform: translate(-50%,-50%);
     background-color: transparent;
+    transition: all 2s;
 
 }
 #page > #chargerButton{
@@ -52,11 +54,24 @@ img{
                 -2px -2px 4px 2px  rgba(70, 14, 14, 0.466),
                 inset 4px 4px 3px 2px rgba(71, 39, 24, 0.644),
                 inset -2px -2px 4px 1px rgba(63, 13, 13, 0.582);
+    transition: all 2s;
 }
-@media screen and ( max-width:1000px){
+@media screen and ( max-width:500px){
 
+
+}
+@media screen and ( max-height:850px ) , ( max-width:500px){
+    #conteneur{
+        width: 300px;
+        height: 300px;
+    }
     #page > #chargerButton{
         top: 5%;
+    }
+    img{
+        position: absolute;
+        width: 150px;
+        height: 150px;
     }
 
     }
