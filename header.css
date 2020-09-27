@@ -1,16 +1,21 @@
 header{
     width: 100vw;
-    height: 10%;
+    height: 100px;
+    
+    /*background-image: url("./header.png") ;*/
+    background-repeat: repeat-x;
     background-color :transparent;
     position: relative;
     animation: both 2s initHeader ease-out;
     box-shadow: none;
     align-content: center;
+    padding-left: 50%;
+    transition: all 1s ;
 }
 header > nav {
     padding: 20px;
-    max-width: 1200px;
-    min-width: 800px;
+    
+    width: 25%;
     display: flex;
     justify-content: space-around;
 
@@ -19,10 +24,39 @@ header > nav {
     font-variant: small-caps;
     position: absolute;
     bottom: 0;
+    transition: all 1s ;
 }
 header > nav >span {
     display: block;
     margin: 10px;
+}
+@media screen and ( max-width:1000px){
+    header{
+        width: 100vw;
+        height: 100px;
+        background-color :transparent;
+        position: relative;
+        animation: both 2s initHeader ease-out;
+        box-shadow: none;
+        align-content: center;
+        padding-left: 30%;
+        transition: all 1s ;
+    }
+    header > nav {
+        padding: 20px;
+        
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+    
+        font-size : 1.5em;
+        color: white;
+        font-variant: small-caps;
+        position: absolute;
+        bottom: 0;
+        transition: all 1s ;
+    }
+
 }
 @keyframes initHeader{
     0%{
